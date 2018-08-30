@@ -60,7 +60,7 @@ body{
 /*begin search bar*/
 
 .search {
-    margin-left:78vw;
+    display:inline-block;
     margin-top:1%;
     position: relative;
     width: 12rem;
@@ -114,6 +114,7 @@ body{
 .info-container p{
     padding-top:7%;
     padding-left:5%;
+    padding-right:5%;
 }
 
 .bluetext{
@@ -167,41 +168,11 @@ button {
     margin:30px;
 }
 
-
-
-
-@media (max-width:1024px){
-    button{
-        margin-top:5px;
-        margin-bottom:5px;
-    }
-    
-    .img-container{
-        display:block;
-        margin: 0 auto;
-    }
-
-    .info-container{
-        display:block;
-        width:100%;
-    }
-
-    .footer{
-        position:relative;
-        bottom:0;
-    }
-    
-    .navbar ul li:nth-child(3){
-        margin-left:20%;
-    }
-    
-    
-    .info-container{
-        text-align:center;
-    }
-
+.blank{
+    width:70%;
+    height:20px;
+    display:inline-block;
 }
-
 
 /*Alternate navbar small screens*/
 .navbar-alt{
@@ -236,6 +207,43 @@ button {
 }
 /*End*/
 
+
+@media (max-width:1024px){
+    button{
+        margin-top:5px;
+        margin-bottom:5px;
+    }
+    
+    .img-container{
+        display:block;
+        margin: 0 auto;
+        width:80%;
+    }
+    
+
+    .info-container{
+        display:block;
+        width:100vw;
+
+    }
+
+    .footer{
+        position:relative;
+        bottom:0;
+    }
+    
+    .navbar ul li:nth-child(3){
+        margin-left:20%;
+    }
+    
+    .info-container{
+        text-align:center;
+    }
+
+}
+
+
+
 @media (max-width:785px){
     .navbar{
         display:none;
@@ -254,8 +262,28 @@ button {
         right:30px;
         font-size:2em;
     }
+
+    .blank{
+    width:40%;
+    height:20px;
+    display:inline-block;
+}
     
-    .search{
-        margin-left:74.1%;
+}
+
+@media (max-width:375px){
+    .info-container p{
+        margin:0;
+        padding:0;
+    }
+    
+    .img-container{
+        height:100px;
     }
 }
+
+/*Current Issues*/
+/*My orange is too small at small screen size*/
+/*My screen size isn't 100vw at small screen size, starts
+to break around 720*/
+/*Buttons are not showing on smallest screen size*/
