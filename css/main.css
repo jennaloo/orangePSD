@@ -6,6 +6,9 @@ body{
     padding:0;
     font-family: 'Quicksand', sans-serif;
     width:100vw;
+    position:relative;
+    box-sizing:border-box;
+    min-height:100vh;
 }
 
 .navbar{
@@ -98,14 +101,12 @@ body{
     background-size:contain;
     display:inline-block;
     background-repeat:no-repeat;
-    margin:0 auto;
 }
 
 
 .info-container{
     display:inline-block;
     width:50%;
-    height:300px;
     color:#FC7C15;
     font-size:28px;
     vertical-align:top;
@@ -123,6 +124,10 @@ body{
 
 sup{
     font-size:12px;
+}
+
+.main{
+    padding-bottom:20px;
 }
 
 .quote{
@@ -145,7 +150,7 @@ button {
 
 
 .footer{
-    position:fixed;
+    position:absolute;
     bottom:0;
     background-color:#7ECDCB;
     height:100px;
@@ -173,6 +178,11 @@ button {
     height:20px;
     display:inline-block;
 }
+
+.buttons{
+    margin:15px;
+}
+
 
 /*Alternate navbar small screens*/
 .navbar-alt{
@@ -217,18 +227,18 @@ button {
     .img-container{
         display:block;
         margin: 0 auto;
-        width:80%;
+        width:70%;
     }
     
 
     .info-container{
         display:block;
         width:100vw;
+        height:400px;
 
     }
 
     .footer{
-        position:relative;
         bottom:0;
     }
     
@@ -262,23 +272,32 @@ button {
         right:30px;
         font-size:2em;
     }
-
+    
+    .info-container{
+        padding:0;
+        font-size:20px;
+    }
+    
     .blank{
-    width:40%;
+    width:60%;
     height:20px;
     display:inline-block;
 }
     
 }
 
-@media (max-width:375px){
+@media (max-width:500px){
     .info-container p{
         margin:0;
         padding:0;
     }
     
+    .blank{
+        width:47%;
+    }
+    
     .img-container{
-        height:100px;
+        height:200px;
     }
 }
 
