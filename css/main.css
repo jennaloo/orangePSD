@@ -179,10 +179,6 @@ button {
     display:inline-block;
 }
 
-.buttons{
-    margin:15px;
-}
-
 
 /*Alternate navbar small screens*/
 .navbar-alt{
@@ -227,7 +223,7 @@ button {
     .img-container{
         display:block;
         margin: 0 auto;
-        width:70%;
+        width:50%;
     }
     
 
@@ -255,6 +251,7 @@ button {
 
 
 @media (max-width:785px){
+        
     .navbar{
         display:none;
     }
@@ -262,6 +259,12 @@ button {
     .navbar-alt{
         display:block;
         color:white;
+    }
+    
+    .img-container{
+        width:70%;
+        margin-bottom:5%;
+        margin-top:5%;
     }
     
     .navbar-alt i{
@@ -273,15 +276,19 @@ button {
         font-size:2em;
     }
     
+    .buttons{
+        margin:5%;
+    }
+    
     .info-container{
         padding:0;
         font-size:20px;
     }
     
     .blank{
-    width:60%;
-    height:20px;
-    display:inline-block;
+        width:60%;
+        height:20px;
+        display:inline-block;
 }
     
 }
@@ -290,6 +297,17 @@ button {
     .info-container p{
         margin:0;
         padding:0;
+    }
+    
+    .search input{
+        padding:5px;
+    }
+    
+    .search i{
+        left:initial;
+        top:initial;
+        left:5px;
+        top:8px;
     }
     
     .blank{
